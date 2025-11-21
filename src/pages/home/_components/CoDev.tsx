@@ -38,20 +38,22 @@ export default function CoDev() {
         </div>
       </div>
       <div className="text-white w-full contain mx-auto">
-        <div className="grid  grid-cols-[repeat(auto-fill,minmax(345px,auto))] place-items-center gap-2 justify-center md:mb-12">
+        <div className="flex flex-wrap justify-center md:mb-12 ">
+          {/*<div className="grid grid-cols-[repeat(auto-fill,minmax(345px,auto))] gap-2 md:mb-12 ">*/}
+          {/*<div className="grid md:grid-cols-2 grid-cols-1  gap-2 md:mb-12 items-center  place-items-center justify-items-center">*/}
           {dev_steps.map((step, index) => (
             <div
               key={index}
-              className="flex flex-col items-center space-y-4 p-4 max-w-md"
+              className="flex flex-col items-center space-y-4 p-4 w-full max-w-[350px] "
             >
-              <div className=" flex bg-base-100 rounded-full p-4">
+              <div className="flex bg-base-100 rounded-full p-4">
                 <img
                   src={step.icon}
                   alt=""
                   className="flex-1 object-contain size-10"
                 />
               </div>
-              <h3 className="  text-2xl font-bold">{step.title}</h3>
+              <h3 className="text-2xl font-bold">{step.title}</h3>
               <p className="text-center">{step.description}</p>
             </div>
           ))}
