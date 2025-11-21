@@ -30,7 +30,7 @@ export default function GetOnDevices() {
               console.log(data);
               toast.info(JSON.stringify(data));
             })}
-            className="bg-base-300 text-base-content p-4 max-w-4/5  md:ml-auto md:mr-0 mx-auto w-full space-y-3 flex flex-col  ring-primary ring-4 "
+            className="bg-base-300 text-base-content p-4 w-full max-w-[390px] md:w-[390px]  md:ml-auto md:mr-0 mx-auto  space-y-3 flex flex-col  ring-primary ring-4 "
           >
             <div className="space-y-2">
               <h2 className="text-3xl font-black">NewsLetter</h2>
@@ -48,7 +48,7 @@ export default function GetOnDevices() {
               placeholder="Email"
               {...register("email")}
             />
-            <button className="btn btn-accent accent max-w-[350px]  w-full mx-auto btn-xl">
+            <button className="btn btn-accent accent max-w-[250px]  w-full mx-auto btn-xl">
               Send
             </button>
           </form>
