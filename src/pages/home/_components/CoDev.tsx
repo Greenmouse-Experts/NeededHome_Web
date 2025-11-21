@@ -38,7 +38,7 @@ export default function CoDev() {
         </div>
       </div>
       <div className="text-white w-full contain mx-auto">
-        <div className="grid  grid-cols-[repeat(auto-fit,minmax(345px,auto))] place-items-center gap-2">
+        <div className="grid  grid-cols-[repeat(auto-fill,minmax(345px,auto))] place-items-center gap-2 justify-center md:mb-12">
           {dev_steps.map((step, index) => (
             <div
               key={index}
